@@ -1,20 +1,17 @@
-name: Generate Repos List
+name: Generate Repos List as Artifact
 
 on:
   schedule:
-    - cron: '0 * * * *'      # automaticky každou hodinu
-  workflow_dispatch:          # možnost ručního spuštění
+    - cron: '0 * * * *'   # každou hodinu
+  workflow_dispatch:       # možnost ručního spuštění
 
 jobs:
   generate-repos:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout s tokenem → umožňuje push
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      # 1️⃣ Checkout repozitáře (read-only stačí)
+      - uses: actions/checkout@v3
 
       # 2️⃣ Setup Python
       - name: Set up Python
@@ -26,15 +23,13 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      # 4️⃣ Generování souboru repos.md
+      # 4️⃣ Vygeneruj repos.md
       - name: Generate repos.md
         run: python generate_repos_md.py
 
-      # 5️⃣ Commit a push změn
-      - name: Commit and push changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add repos.md
-          git diff --cached --quiet || git commit -m "Update repos.md"
-          git push origin HEAD:main
+      # 5️⃣ Ulož repos.md jako artifact
+      - name: Upload repos.md as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: repos-md
+          path: repos.md
