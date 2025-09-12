@@ -1,0 +1,10 @@
+# GitLab CI example
+stages:
+  - terraform
+terraform_job:
+  stage: terraform
+  image: hashicorp/terraform:latest
+  script:
+    - terraform init
+    - terraform plan
+    - terraform apply -auto-approve
