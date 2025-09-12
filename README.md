@@ -68,7 +68,8 @@ repo/
 ├── project3/
 │   └── ...
 └── README.md
-</pre>pre>
+</pre>
+
 
 *Každý workflow YAML může být nastaven tak, aby se spouštěl jen na změny v určité složce:
 <pre>
@@ -79,7 +80,7 @@ on:
   pull_request:
     paths:
       - 'project1/**'
-</pre>pre>
+</pre>
 
 3. **GitLab CI/CD:**  
    - Umísti `.gitlab-ci.yml` do root repozitáře  
