@@ -1,0 +1,33 @@
+name: Generate Repos List
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # každou hodinu
+  workflow_dispatch:     # možnost spustit ručně
+
+jobs:
+  generate-repos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate repos.md
+        run: python generate_repos_md.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add repos.md
+          git diff --quiet || git commit -m "Update repos.md"
+          git push
