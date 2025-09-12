@@ -2,19 +2,19 @@ name: Generate Repos List
 
 on:
   schedule:
-    - cron: '0 * * * *'  # každou hodinu
-  workflow_dispatch:      # umožňuje ruční spuštění
+    - cron: '0 * * * *'      # automaticky každou hodinu
+  workflow_dispatch:          # možnost ručního spuštění
 
 jobs:
   generate-repos:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repozitáře s tokenem
+      # 1️⃣ Checkout s tokenem → umožňuje push
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # token pro push
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # 2️⃣ Setup Python
       - name: Set up Python
@@ -22,11 +22,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 3️⃣ Nainstaluj závislosti
+      # 3️⃣ Instalace závislostí
       - name: Install dependencies
         run: pip install requests
 
-      # 4️⃣ Vygeneruj repos.md
+      # 4️⃣ Generování souboru repos.md
       - name: Generate repos.md
         run: python generate_repos_md.py
 
