@@ -10,24 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repozitáře (read-only stačí)
+      # Checkout repozitáře (read-only stačí)
       - uses: actions/checkout@v3
 
-      # 2️⃣ Setup Python
+      # Setup Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # 3️⃣ Instalace závislostí
+      # Instalace závislostí
       - name: Install dependencies
         run: pip install requests
 
-      # 4️⃣ Vygeneruj repos.md
+      # Generování repos.md
       - name: Generate repos.md
         run: python generate_repos_md.py
 
-      # 5️⃣ Ulož repos.md jako artifact
+      # Uložení repos.md jako artifact
       - name: Upload repos.md as artifact
         uses: actions/upload-artifact@v3
         with:
