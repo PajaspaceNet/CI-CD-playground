@@ -89,5 +89,5 @@ on:
 ## Cíl
 
 - Demonstrovat **CI/CD pipelines** pro infrastrukturu jako kód (Terraform)  
-- Poskytnout **ukázkový playground**, kde se dá experimentovat s různými nástroji  
+- Poskytnout **ukázkový playground**, kde se dá experimentovat s různými nástroji, vice projektu najednou atd...
 - Slouží jako **vzdělávací materiál** pro DevOps, CI/CD a IAC
