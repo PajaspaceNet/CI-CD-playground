@@ -13,6 +13,7 @@ Tento repozitář slouží jako **DevOps / CI/CD playground**, ukazuje ukázkov�
 - **GitHub Actions**  
   - `main.yml` ukazuje jednoduchou CI workflow pro Terraform  
   - Spouští stejné kroky jako Jenkins pipeline
+  - Testovani projektu **pomoci GitHubAction**
 
 - **GitLab CI/CD**  
   - `.gitlab-ci.yml` ukázková pipeline pro Terraform
