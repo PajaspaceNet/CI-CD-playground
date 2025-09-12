@@ -1,17 +1,11 @@
-import os
 import requests
 
-# Získání tokenu z prostředí
-token = os.environ.get("GITHUB_TOKEN")
-headers = {"Authorization": f"token {token}"} if token else {}
-
 # GitHub username
-username = "Pajaspacenet"  # <-- nahraď svým jménem
+username = "PajaspaceNet"  # ← nahraď svým jménem
 
-# URL pro získání repozitářů
+# Získání veřejných repozitářů (žádná autentizace)
 url = f"https://api.github.com/users/{username}/repos?per_page=100"
-
-response = requests.get(url, headers=headers)
+response = requests.get(url)
 
 if response.status_code != 200:
     raise Exception(f"Chyba při získávání repozitářů: {response.status_code} {response.text}")
