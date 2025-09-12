@@ -1,34 +1,34 @@
+import os
 import requests
 
-# ← nahraď svým GitHub username
-USERNAME = "PajaspaceNet"
-OUTPUT_FILE = "repos.md"
+# Získání tokenu z prostředí
+token = os.environ.get("GITHUB_TOKEN")
+headers = {"Authorization": f"token {token}"} if token else {}
 
-# Stahování veřejných repozitářů
-url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100"
-repos = []
-page = 1
+# GitHub username
+username = "Pajaspacenet"  # <-- nahraď svým jménem
 
-while True:
-    resp = requests.get(f"{url}&page={page}")
-    data = resp.json()
-    if not data:
-        break
-    for repo in data:
-        name = repo["name"]
-        html_url = repo["html_url"]
-        description = repo.get("description", "")
-        repos.append([name, html_url, description])
-    page += 1
+# URL pro získání repozitářů
+url = f"https://api.github.com/users/{username}/repos?per_page=100"
 
-# Generování Markdown tabulky
-md = "# Automaticky generovaný seznam mých repozitářů\n\n"
-md += "| Název | Odkaz | Popis |\n|-------|-------|-------|\n"
-for name, html_url, description in repos:
-    md += f"| {name} | [Link]({html_url}) | {description} |\n"
+response = requests.get(url, headers=headers)
 
-# Uložení do repos.md
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    f.write(md)
+if response.status_code != 200:
+    raise Exception(f"Chyba při získávání repozitářů: {response.status_code} {response.text}")
 
-print(f"✅ Uloženo {len(repos)} repozitářů do {OUTPUT_FILE}")
+repos = response.json()
+
+# Vytvoření Markdown tabulky
+md_lines = ["# Seznam mých GitHub repozitářů", "", "| Název | Popis | Link |", "| --- | --- | --- |"]
+
+for repo in repos:
+    name = repo["name"]
+    desc = repo["description"] or ""
+    link = repo["html_url"]
+    md_lines.append(f"| {name} | {desc} | [Repo]({link}) |")
+
+# Uložení do souboru
+with open("repos.md", "w", encoding="utf-8") as f:
+    f.write("\n".join(md_lines))
+
+print("repos.md byl úspěšně vygenerován!")
