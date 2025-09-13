@@ -1,5 +1,5 @@
 # Seznam repozitářů
-via script automate generating ...
+via script GIT Hub Action generate ...
 | Name | URL | Description |
 | --- | --- | --- |
 | Advanced_Ansible_Deployment | https://github.com/PajaspaceNet/Advanced_Ansible_Deployment | This is demonstration of Advance ansible Advance possibilities |
