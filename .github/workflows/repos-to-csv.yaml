@@ -17,12 +17,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gh jq
 
-      - name: Authenticate GitHub CLI
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh auth login --with-token <<< "$GITHUB_TOKEN"
-
       - name: Fetch repos and save to CSV
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh repo list PajaspaceNet --limit 200 --json name,description,url \
             | jq -r '.[] | [.name, (.description // ""), .url] | @csv' > repos.csv
