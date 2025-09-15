@@ -19,21 +19,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gh jq
 
-      # 3️⃣ Generování CSV bezpečně
+      # 3️⃣ Generování CSV (Variant A - bezpečně)
       - name: Fetch repos and save to CSV
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Hlavička CSV
           echo "Name,Description,URL" > repos.csv
-          
-          # Generování dat, escapování uvozovek a nových řádků
-          gh repo list PajaspaceNet --limit 200 --json name,description,url \
-            | jq -r '.[] | [
-                .name,
-                (.description // "" | gsub("\n"; " ") | gsub("\""; "'")),
-                .url
-              ] | @csv' >> repos.csv
+          gh repo list PajaspaceNet --limit 200 --json name,description,url | \
+          jq -r '.[] | [
+              .name,
+              (.description // "" | gsub("\n"; " ") | gsub("\""; "'")),
+              .url
+            ] | @csv' >> repos.csv
 
       # 4️⃣ Setup Python
       - name: Setup Python
