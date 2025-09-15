@@ -11,7 +11,7 @@ with open(csv_file, newline='', encoding='utf-8') as f:
     rows = list(reader)
     columns = reader.fieldnames
 
-# Začni Markdown soubor
+# Začni Markdown soubor s hlavičkou a datem
 md_lines = [
     f"Generated with GitHub Automate – {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
     "# Seznam repozitářů",
@@ -22,12 +22,11 @@ md_lines = [
 md_lines.append("| " + " | ".join(columns) + " |")
 md_lines.append("| " + " | ".join(["---"] * len(columns)) + " |")
 
-# Přidej data s klikacími odkazy
+# Přidej data s klikacími odkazy pro Name
 for row in rows:
     row_data = []
     for col in columns:
         val = row[col] if row[col] else ""
-        # Uděláme klikací odkaz pro sloupec Name
         if col.lower() == "name":
             val = f"[{val}]({row['URL']})"
         row_data.append(val)
