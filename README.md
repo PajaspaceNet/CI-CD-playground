@@ -10,7 +10,8 @@ Tento repozitář slouží jako **DevOps / CI/CD playground**, ukazuje ukázkov�
   - `README.md` obsahuje stručný popis pipeline
   
 
-- **GitHub Actions**  
+- **GitHub Actions**
+- Automaticky generovany index a export vsech rep na PajaspaceNet pomoci - GitHub Actions workflow
   - `main.yml` ukazuje jednoduchou CI workflow pro Terraform  
   - Spouští stejné kroky jako Jenkins pipeline
   - Testovani projektu **pomoci GitHubAction**
