@@ -1,15 +1,13 @@
 name: Export GitHub Repos to CSV and Markdown
 
-# Ruční spuštění i plánovaný
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 6 * * 1"
 
-# Concurrency – zabrání paralelním konfliktům
 concurrency:
   group: export-repos
-  cancel-in-progress: false   # druhý běh počká na dokončení prvního
+  cancel-in-progress: false  # druhý běh počká na dokončení prvního
 
 jobs:
   export:
@@ -25,7 +23,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gh jq
 
-      # 3️⃣ Generování CSV (opraveno pro uvozovky)
+      # 3️⃣ Generování CSV
       - name: Fetch repos and save to CSV
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -52,12 +50,11 @@ jobs:
       - name: List files
         run: ls -la
 
-      # 7️⃣ Commit a push s pull --rebase
-      - name: Commit CSV and Markdown
+      # 7️⃣ Commit a force push
+      - name: Commit CSV and Markdown (force push)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add repos.csv repos.md
           git commit -m "Update repo list [skip ci]" --allow-empty
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git push origin HEAD:main --force
