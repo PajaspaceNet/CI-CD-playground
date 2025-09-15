@@ -3,7 +3,7 @@ name: Export GitHub Repos to CSV and Markdown
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * 1"   # každý pondělí v 6:00 UTC
+    - cron: "0 6 * * 1"   # každé pondělí v 6:00 UTC
 
 jobs:
   export:
@@ -19,18 +19,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gh jq
 
-      # 3️⃣ Generování CSV (Variant A - bezpečně)
+      # 3️⃣ Generování CSV (opraveno pro uvozovky)
       - name: Fetch repos and save to CSV
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Name,Description,URL" > repos.csv
           gh repo list PajaspaceNet --limit 200 --json name,description,url | \
-          jq -r '.[] | [
+          jq -r ".[] | [
               .name,
-              (.description // "" | gsub("\n"; " ") | gsub("\""; "'")),
+              (.description // \"\" | gsub(\"\n\"; \" \") | gsub(\"\\\"\"; \"'\")),
               .url
-            ] | @csv' >> repos.csv
+            ] | @csv" >> repos.csv
 
       # 4️⃣ Setup Python
       - name: Setup Python
