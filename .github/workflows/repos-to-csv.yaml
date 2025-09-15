@@ -1,9 +1,15 @@
 name: Export GitHub Repos to CSV and Markdown
 
+# Ruční spuštění i plánovaný
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * 1"   # každý pondělí v 6:00 UTC
+    - cron: "0 6 * * 1"
+
+# Concurrency – zabrání paralelním konfliktům
+concurrency:
+  group: export-repos
+  cancel-in-progress: false   # druhý běh počká na dokončení prvního
 
 jobs:
   export:
