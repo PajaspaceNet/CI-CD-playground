@@ -1,27 +1,33 @@
 name: Export GitHub Repos to CSV and Markdown
 
 on:
-  workflow_dispatch:        # ruční spuštění
+  workflow_dispatch:
   schedule:
-    - cron: "0 6 * * 1"     # volitelné: každé pondělí v 6:00 UTC
+    - cron: "0 6 * * 1"   # každý pondělí v 6:00 UTC
 
 jobs:
   export:
     runs-on: ubuntu-latest
     steps:
+      # 1️⃣ Checkout repozitáře
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2️⃣ Instalace GitHub CLI a jq
       - name: Install GitHub CLI and jq
         run: |
           sudo apt-get update
           sudo apt-get install -y gh jq
 
+      # 3️⃣ Generování CSV bezpečně
       - name: Fetch repos and save to CSV
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Hlavička CSV
           echo "Name,Description,URL" > repos.csv
+          
+          # Generování dat, escapování uvozovek a nových řádků
           gh repo list PajaspaceNet --limit 200 --json name,description,url \
             | jq -r '.[] | [
                 .name,
@@ -29,18 +35,25 @@ jobs:
                 .url
               ] | @csv' >> repos.csv
 
+      # 4️⃣ Setup Python
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
+      # 5️⃣ Spuštění Python skriptu pro Markdown
       - name: Run formatting script
         run: python format_csv.py
 
+      # 6️⃣ Kontrola souborů
+      - name: List files
+        run: ls -la
+
+      # 7️⃣ Commit a push vždy (i prázdný commit)
       - name: Commit CSV and Markdown
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add repos.csv repos.md || true
-          git commit -m "Update repo list [skip ci]" || echo "No changes to commit"
-          git push
+          git add repos.csv repos.md
+          git commit -m "Update repo list [skip ci]" --allow-empty
+          git push origin HEAD:main
