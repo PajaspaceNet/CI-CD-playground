@@ -11,7 +11,7 @@ Tento repozitář slouží jako **DevOps / CI/CD playground**, ukazuje ukázkov�
   
 
 - **GitHub Actions**
-- Automaticky generovany index a export vsech rep na PajaspaceNet pomoci - GitHub Actions workflow
+- [Automaticky generovany](https://github.com/PajaspaceNet/CI-CD-playground/blob/main/repos.md) index a export vsech rep na PajaspaceNet pomoci - GitHub Actions workflow , bud kazde rano v 6 , lze spustit i manualne
   - `main.yml` ukazuje jednoduchou CI workflow pro Terraform  
   - Spouští stejné kroky jako Jenkins pipeline
   - Testovani projektu **pomoci GitHubAction**
