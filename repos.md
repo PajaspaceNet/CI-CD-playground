@@ -1,8 +1,10 @@
-Generated with GitHub Automate – 2025-09-15 07:10:37
+Generated with GitHub Automate – 2025-09-16 07:47:08
 # Seznam repozitářů
 
 | Name | Description | URL |
 | --- | --- | --- |
+| [jboss-basic-](https://github.com/PajaspaceNet/jboss-basic-) | About  JBOSS basic instalation, configuration, HowTo  | https://github.com/PajaspaceNet/jboss-basic- |
+| [Bash_Automation_Scripts](https://github.com/PajaspaceNet/Bash_Automation_Scripts) | Bash skriptů pro automatizaci běžných úkolů. Vhodné pro začátečníky i pokročilé uživatele Bash | https://github.com/PajaspaceNet/Bash_Automation_Scripts |
 | [CI-CD-playground](https://github.com/PajaspaceNet/CI-CD-playground) | CI-CD playground Jenkins, GITHub Actions ...,GIT LAB | https://github.com/PajaspaceNet/CI-CD-playground |
 | [PajaspaceNet](https://github.com/PajaspaceNet/PajaspaceNet) | Hi , a little about myself :-) | https://github.com/PajaspaceNet/PajaspaceNet |
 | [Cloud-IAC-playgroound](https://github.com/PajaspaceNet/Cloud-IAC-playgroound) |  HowTo IAC /AWS - infra demo,Azure.../ , Terraform HowTo ,Cheet Sheets | https://github.com/PajaspaceNet/Cloud-IAC-playgroound |
@@ -10,7 +12,6 @@ Generated with GitHub Automate – 2025-09-15 07:10:37
 | [docker-playground-experiment](https://github.com/PajaspaceNet/docker-playground-experiment) | How start diffenerent OS in Docker , some fun, HowTo ETC ... just experiments | https://github.com/PajaspaceNet/docker-playground-experiment |
 | [Springboot-CI-CD-Pipeline](https://github.com/PajaspaceNet/Springboot-CI-CD-Pipeline) | This is one of my individual projects, which demonstrates a complete CI/CD pipeline for a Spring Boot application using GitHub Actions, Docker, and AWS, by automates the build, test, Dockerization, and deployment processes. | https://github.com/PajaspaceNet/Springboot-CI-CD-Pipeline |
 | [Brno_MHD_Dashboard](https://github.com/PajaspaceNet/Brno_MHD_Dashboard) | MHD Brno Dash Board | https://github.com/PajaspaceNet/Brno_MHD_Dashboard |
-| [Bash_Automation_Scripts](https://github.com/PajaspaceNet/Bash_Automation_Scripts) | Bash skriptů pro automatizaci běžných úkolů. Vhodné pro začátečníky i pokročilé uživatele Bash | https://github.com/PajaspaceNet/Bash_Automation_Scripts |
 | [PythonAutomate](https://github.com/PajaspaceNet/PythonAutomate) | Here are Python scripts for automation | https://github.com/PajaspaceNet/PythonAutomate |
 | [jamulus-docker-server](https://github.com/PajaspaceNet/jamulus-docker-server) | JamulusServer for musician play music on network with low latetntion | https://github.com/PajaspaceNet/jamulus-docker-server |
 | [fastapi_example](https://github.com/PajaspaceNet/fastapi_example) | project example fastapi  REST API v Pythonu + FastAPI | https://github.com/PajaspaceNet/fastapi_example |
