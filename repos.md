@@ -1,15 +1,16 @@
-Generated with GitHub Automate – 2025-09-23 07:17:42
+Generated with GitHub Automate – 2025-09-29 06:16:51
 # Seznam repozitářů
 
 | Name | Description | URL |
 | --- | --- | --- |
-| [docker-kubernetes-playground](https://github.com/PajaspaceNet/docker-kubernetes-playground) | How start diffenerent OS in Docker + Kubernetes Structure examples , some fun, HowTo ETC ...  | https://github.com/PajaspaceNet/docker-kubernetes-playground |
-| [PajaspaceNet](https://github.com/PajaspaceNet/PajaspaceNet) | Hi , a little about myself :-) | https://github.com/PajaspaceNet/PajaspaceNet |
-| [JAVA_user_service_open_api](https://github.com/PajaspaceNet/JAVA_user_service_open_api) | JAVA_user_service_openapi - demonstration | https://github.com/PajaspaceNet/JAVA_user_service_open_api |
-| [CI-CD-playground](https://github.com/PajaspaceNet/CI-CD-playground) | CI-CD playground Jenkins, GITHub Actions ...,GIT LAB | https://github.com/PajaspaceNet/CI-CD-playground |
 | [jboss-basic-](https://github.com/PajaspaceNet/jboss-basic-) | About  JBOSS basic instalation, configuration, HowTo  | https://github.com/PajaspaceNet/jboss-basic- |
-| [java-point](https://github.com/PajaspaceNet/java-point) | About Java howTo , Jakarta, - etc  | https://github.com/PajaspaceNet/java-point |
 | [Bash_Automation_Scripts](https://github.com/PajaspaceNet/Bash_Automation_Scripts) | Bash skriptů pro automatizaci běžných úkolů. Vhodné pro začátečníky i pokročilé uživatele Bash | https://github.com/PajaspaceNet/Bash_Automation_Scripts |
+| [PajaspaceNet](https://github.com/PajaspaceNet/PajaspaceNet) | Hi , a little about myself :-) | https://github.com/PajaspaceNet/PajaspaceNet |
+| [SQL-Playground](https://github.com/PajaspaceNet/SQL-Playground) | Basic SQL ,join,select, examples ,HowTo  | https://github.com/PajaspaceNet/SQL-Playground |
+| [docker-kubernetes-playground](https://github.com/PajaspaceNet/docker-kubernetes-playground) | How start diffenerent OS in Docker + Kubernetes Structure examples , some fun, HowTo ETC ...  | https://github.com/PajaspaceNet/docker-kubernetes-playground |
+| [CI-CD-playground](https://github.com/PajaspaceNet/CI-CD-playground) | CI-CD playground Jenkins, GITHub Actions ...,GIT LAB | https://github.com/PajaspaceNet/CI-CD-playground |
+| [JAVA_user_service_open_api](https://github.com/PajaspaceNet/JAVA_user_service_open_api) | JAVA_user_service_openapi - demonstration | https://github.com/PajaspaceNet/JAVA_user_service_open_api |
+| [java-point](https://github.com/PajaspaceNet/java-point) | About Java howTo , Jakarta, - etc  | https://github.com/PajaspaceNet/java-point |
 | [Cloud-IAC-playgroound](https://github.com/PajaspaceNet/Cloud-IAC-playgroound) |  HowTo IAC /AWS - infra demo,Azure.../ , Terraform HowTo ,Cheet Sheets | https://github.com/PajaspaceNet/Cloud-IAC-playgroound |
 | [ansible-playground-experiment](https://github.com/PajaspaceNet/ansible-playground-experiment) | This is ansible learning  | https://github.com/PajaspaceNet/ansible-playground-experiment |
 | [Springboot-CI-CD-Pipeline](https://github.com/PajaspaceNet/Springboot-CI-CD-Pipeline) | This is one of my individual projects, which demonstrates a complete CI/CD pipeline for a Spring Boot application using GitHub Actions, Docker, and AWS, by automates the build, test, Dockerization, and deployment processes. | https://github.com/PajaspaceNet/Springboot-CI-CD-Pipeline |
