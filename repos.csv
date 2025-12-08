@@ -1,4 +1,5 @@
 Name,Description,URL
+"PythonAutomate","Here are Python scripts for automation","https://github.com/PajaspaceNet/PythonAutomate"
 "CI-CD-playground","CI-CD playground Jenkins, GITHub Actions ...,GIT LAB","https://github.com/PajaspaceNet/CI-CD-playground"
 "jboss-basic-","About  JBOSS basic instalation, configuration, HowTo ","https://github.com/PajaspaceNet/jboss-basic-"
 "Bash_Automation_Scripts","Bash skriptů pro automatizaci běžných úkolů. Vhodné pro začátečníky i pokročilé uživatele Bash","https://github.com/PajaspaceNet/Bash_Automation_Scripts"
@@ -11,7 +12,6 @@ Name,Description,URL
 "ansible-playground-experiment","This is ansible learning ","https://github.com/PajaspaceNet/ansible-playground-experiment"
 "Springboot-CI-CD-Pipeline","This is one of my individual projects, which demonstrates a complete CI/CD pipeline for a Spring Boot application using GitHub Actions, Docker, and AWS, by automates the build, test, Dockerization, and deployment processes.","https://github.com/PajaspaceNet/Springboot-CI-CD-Pipeline"
 "Brno_MHD_Dashboard","MHD Brno Dash Board","https://github.com/PajaspaceNet/Brno_MHD_Dashboard"
-"PythonAutomate","Here are Python scripts for automation","https://github.com/PajaspaceNet/PythonAutomate"
 "jamulus-docker-server","JamulusServer for musician play music on network with low latetntion","https://github.com/PajaspaceNet/jamulus-docker-server"
 "fastapi_example","project example fastapi  REST API v Pythonu + FastAPI","https://github.com/PajaspaceNet/fastapi_example"
 "demo-gitlab-projekt"," demonstration GitLab CI/CD pipeline for deploy on VPS","https://github.com/PajaspaceNet/demo-gitlab-projekt"
