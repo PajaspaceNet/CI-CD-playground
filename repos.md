@@ -1,11 +1,11 @@
-Generated with GitHub Automate – 2025-12-15 06:19:01
+Generated with GitHub Automate – 2025-12-22 06:18:45
 # Seznam repozitářů
 
 | Name | Description | URL |
 | --- | --- | --- |
-| [jamulus-docker-server](https://github.com/PajaspaceNet/jamulus-docker-server) | JamulusServer for musician play music on network with low latetntion | https://github.com/PajaspaceNet/jamulus-docker-server |
 | [PythonAutomate](https://github.com/PajaspaceNet/PythonAutomate) | Here are Python scripts for automation | https://github.com/PajaspaceNet/PythonAutomate |
 | [CI-CD-playground](https://github.com/PajaspaceNet/CI-CD-playground) | CI-CD playground Jenkins, GITHub Actions ...,GIT LAB | https://github.com/PajaspaceNet/CI-CD-playground |
+| [jamulus-docker-server](https://github.com/PajaspaceNet/jamulus-docker-server) | JamulusServer for musician play music on network with low latetntion | https://github.com/PajaspaceNet/jamulus-docker-server |
 | [jboss-basic-](https://github.com/PajaspaceNet/jboss-basic-) | About  JBOSS basic instalation, configuration, HowTo  | https://github.com/PajaspaceNet/jboss-basic- |
 | [Bash_Automation_Scripts](https://github.com/PajaspaceNet/Bash_Automation_Scripts) | Bash skriptů pro automatizaci běžných úkolů. Vhodné pro začátečníky i pokročilé uživatele Bash | https://github.com/PajaspaceNet/Bash_Automation_Scripts |
 | [PajaspaceNet](https://github.com/PajaspaceNet/PajaspaceNet) | Hi , a little about myself :-) | https://github.com/PajaspaceNet/PajaspaceNet |
