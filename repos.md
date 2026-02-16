@@ -1,10 +1,11 @@
-Generated with GitHub Automate – 2026-02-09 06:52:55
+Generated with GitHub Automate – 2026-02-16 06:50:38
 # Seznam repozitářů
 
 | Name | Description | URL |
 | --- | --- | --- |
+| [Minikube_proj](https://github.com/PajaspaceNet/Minikube_proj) | Minikube -  Start FlaskApp container on Minikube /K8s simulation/ | https://github.com/PajaspaceNet/Minikube_proj |
+| [excel-vba-tools](https://github.com/PajaspaceNet/excel-vba-tools) | A collection of VBA scripts for Excel automation  | https://github.com/PajaspaceNet/excel-vba-tools |
 | [CI-CD-playground](https://github.com/PajaspaceNet/CI-CD-playground) | CI-CD playground Jenkins, GITHub Actions ...,GIT LAB | https://github.com/PajaspaceNet/CI-CD-playground |
-| [PythonAutomate](https://github.com/PajaspaceNet/PythonAutomate) | Here are Python scripts for automation | https://github.com/PajaspaceNet/PythonAutomate |
 | [jamulus-docker-server](https://github.com/PajaspaceNet/jamulus-docker-server) | JamulusServer for musician play music on network with low latetntion | https://github.com/PajaspaceNet/jamulus-docker-server |
 | [jboss-basic-](https://github.com/PajaspaceNet/jboss-basic-) | About  JBOSS basic instalation, configuration, HowTo  | https://github.com/PajaspaceNet/jboss-basic- |
 | [Bash_Automation_Scripts](https://github.com/PajaspaceNet/Bash_Automation_Scripts) | Bash skriptů pro automatizaci běžných úkolů. Vhodné pro začátečníky i pokročilé uživatele Bash | https://github.com/PajaspaceNet/Bash_Automation_Scripts |
@@ -25,7 +26,6 @@ Generated with GitHub Automate – 2026-02-09 06:52:55
 | [Grafana-Prometheus-Demo](https://github.com/PajaspaceNet/Grafana-Prometheus-Demo) | Grafana Prometheus DEMO | https://github.com/PajaspaceNet/Grafana-Prometheus-Demo |
 | [Ansible_Demo_Basic](https://github.com/PajaspaceNet/Ansible_Demo_Basic) | This is demo of Ansible demonstartion | https://github.com/PajaspaceNet/Ansible_Demo_Basic |
 | [Ansible_Demo_Server_Maintenance](https://github.com/PajaspaceNet/Ansible_Demo_Server_Maintenance) |  | https://github.com/PajaspaceNet/Ansible_Demo_Server_Maintenance |
-| [Minikube_proj](https://github.com/PajaspaceNet/Minikube_proj) | Minikube -  Start FlaskApp container on Minikube /K8s simulation/ | https://github.com/PajaspaceNet/Minikube_proj |
 | [Playwright_demo](https://github.com/PajaspaceNet/Playwright_demo) | Here is playwright demonstaration | https://github.com/PajaspaceNet/Playwright_demo |
 | [behave-login-java](https://github.com/PajaspaceNet/behave-login-java) |  | https://github.com/PajaspaceNet/behave-login-java |
 | [behave-login-python](https://github.com/PajaspaceNet/behave-login-python) |  | https://github.com/PajaspaceNet/behave-login-python |
