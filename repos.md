@@ -1,11 +1,11 @@
-Generated with GitHub Automate – 2026-02-16 06:50:38
+Generated with GitHub Automate – 2026-02-23 06:51:45
 # Seznam repozitářů
 
 | Name | Description | URL |
 | --- | --- | --- |
+| [CI-CD-playground](https://github.com/PajaspaceNet/CI-CD-playground) | CI-CD playground Jenkins, GITHub Actions ...,GIT LAB | https://github.com/PajaspaceNet/CI-CD-playground |
 | [Minikube_proj](https://github.com/PajaspaceNet/Minikube_proj) | Minikube -  Start FlaskApp container on Minikube /K8s simulation/ | https://github.com/PajaspaceNet/Minikube_proj |
 | [excel-vba-tools](https://github.com/PajaspaceNet/excel-vba-tools) | A collection of VBA scripts for Excel automation  | https://github.com/PajaspaceNet/excel-vba-tools |
-| [CI-CD-playground](https://github.com/PajaspaceNet/CI-CD-playground) | CI-CD playground Jenkins, GITHub Actions ...,GIT LAB | https://github.com/PajaspaceNet/CI-CD-playground |
 | [jamulus-docker-server](https://github.com/PajaspaceNet/jamulus-docker-server) | JamulusServer for musician play music on network with low latetntion | https://github.com/PajaspaceNet/jamulus-docker-server |
 | [jboss-basic-](https://github.com/PajaspaceNet/jboss-basic-) | About  JBOSS basic instalation, configuration, HowTo  | https://github.com/PajaspaceNet/jboss-basic- |
 | [Bash_Automation_Scripts](https://github.com/PajaspaceNet/Bash_Automation_Scripts) | Bash skriptů pro automatizaci běžných úkolů. Vhodné pro začátečníky i pokročilé uživatele Bash | https://github.com/PajaspaceNet/Bash_Automation_Scripts |
