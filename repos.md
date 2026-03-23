@@ -1,9 +1,10 @@
-Generated with GitHub Automate – 2026-03-16 07:03:00
+Generated with GitHub Automate – 2026-03-23 06:55:57
 # Seznam repozitářů
 
 | Name | Description | URL |
 | --- | --- | --- |
 | [CI-CD-playground](https://github.com/PajaspaceNet/CI-CD-playground) | CI-CD playground Jenkins, GITHub Actions ...,GIT LAB | https://github.com/PajaspaceNet/CI-CD-playground |
+| [certified-kubernetes-administrator-course](https://github.com/PajaspaceNet/certified-kubernetes-administrator-course) | Certified Kubernetes Administrator - CKA Course | https://github.com/PajaspaceNet/certified-kubernetes-administrator-course |
 | [Minikube_proj](https://github.com/PajaspaceNet/Minikube_proj) | Minikube -  Start FlaskApp container on Minikube /K8s simulation/ | https://github.com/PajaspaceNet/Minikube_proj |
 | [excel-vba-tools](https://github.com/PajaspaceNet/excel-vba-tools) | A collection of VBA scripts for Excel automation  | https://github.com/PajaspaceNet/excel-vba-tools |
 | [jamulus-docker-server](https://github.com/PajaspaceNet/jamulus-docker-server) | JamulusServer for musician play music on network with low latetntion | https://github.com/PajaspaceNet/jamulus-docker-server |
@@ -42,4 +43,5 @@ Generated with GitHub Automate – 2026-03-16 07:03:00
 | [awesome-compose](https://github.com/PajaspaceNet/awesome-compose) | Awesome Docker Compose samples | https://github.com/PajaspaceNet/awesome-compose |
 | [ovecka_project](https://github.com/PajaspaceNet/ovecka_project) | A fun project simulating counting sheep with animations and sound effects | https://github.com/PajaspaceNet/ovecka_project |
 | [TlakMonitor](https://github.com/PajaspaceNet/TlakMonitor) | A simple app for tracking blood pressure readings, adding notes, and exporting reports for effective health monitoring. | https://github.com/PajaspaceNet/TlakMonitor |
+| [efk-stack](https://github.com/PajaspaceNet/efk-stack) |  | https://github.com/PajaspaceNet/efk-stack |
 | [shell-scripting_1](https://github.com/PajaspaceNet/shell-scripting_1) | Notes from Shell Scripting  | https://github.com/PajaspaceNet/shell-scripting_1 |
