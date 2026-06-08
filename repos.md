@@ -1,4 +1,4 @@
-Generated with GitHub Automate – 2026-06-01 11:04:27
+Generated with GitHub Automate – 2026-06-08 10:13:01
 # Seznam repozitářů
 
 | Name | Description | URL |
